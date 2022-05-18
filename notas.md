@@ -1,6 +1,7 @@
 <div>
 <h1 style="font-size: 35px; font-weight: bold; color: purple">Curso JavaScript e TypeScript do básico ao avançado</h1>
 <h2 style="font-size: 25px; font-weight: regular; color: purple">Prof.: Luis Otávio Miranda</h2>
+<h4 style="font-size: 25px; font-weight: regular; color: purple"><a href="https://github.com/FelipePassos09/curso-js-Otavio_Miranda">Link para o Repo do prof.</a></h4>
 </div>
 <br />
 <h2>Aula 1 - Instalando VsCode e Node no Windows</h2>
@@ -36,3 +37,5 @@ Diferente de outras linguagens, o javascript permite o uso de aspas simples, dup
     <ul>Diferente de outras linguagens, o JavaScript não disntigue integer de double, neste caso ambos os tipos de número sçao tratados como number.</ul>
 </li>
 </p>
+<h2>Comentando</h2>
+<p>Para comentar no js basta anteceder a mensagem do comentário com duas barras '//', desse modo a engine do JS irá ignorar os textos inseridos como comentários. Caso seja necessário a inclusão de um código longo ou quebrado em diversas linhas basta iserí-lo entre barras e asteríscos, desta maneira:<br />/* --Texto, paragrafo, etc-- */<br />Por fim, se pretendemos remover um trecho de código podemos simplesmente comentá-lo usando barras duplas para linhas individuais ou barra+asterisco para blocos de código.</p>
