@@ -3,6 +3,7 @@
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "typescript": "ts-node",
+        "html": " vivaldi-stable %u $dir $fileName",
     },
 
     "code-runner.customCommand": "echo zsh"

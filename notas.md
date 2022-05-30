@@ -34,8 +34,43 @@ Diferente de outras linguagens, o javascript permite o uso de aspas simples, dup
     <ul>É todo texto alfanumérico, contendo ou não caracteres especiais.</ul>
 </li>
 <li>Number
-    <ul>Diferente de outras linguagens, o JavaScript não disntigue integer de double, neste caso ambos os tipos de número sçao tratados como number.</ul>
+    <ul>Diferente de outras linguagens, o JavaScript não distingue integer de double, neste caso ambos os tipos de número são tratados como number.</ul>
 </li>
 </p>
 <h2>Comentando</h2>
 <p>Para comentar no js basta anteceder a mensagem do comentário com duas barras '//', desse modo a engine do JS irá ignorar os textos inseridos como comentários. Caso seja necessário a inclusão de um código longo ou quebrado em diversas linhas basta iserí-lo entre barras e asteríscos, desta maneira:<br />/* --Texto, paragrafo, etc-- */<br />Por fim, se pretendemos remover um trecho de código podemos simplesmente comentá-lo usando barras duplas para linhas individuais ou barra+asterisco para blocos de código.</p>
+<h2>Navegador x Node</h2>
+<p>Para implementarmos um script js em um html basta referencia-lo dentro do HTML, seja diretamente dentro do HTML quanto em um arquivo separado usando o argumento src='' da tag "script". Porém é usual o uso em um arquivo á parte, sendo fortemente recomendado não utilizar js dentro do html diretamente e sempre a partir de um arquivo à parte, mais especificamente em uma pasta que possua os arquivos .js dentro dela.</p>
+
+<h3>Entrada ALERT</h3>
+<p>Para para exibirmos um alerta em tela usamos a classe Window, porém esta não existe para o Node, apenas para o navegador. Neste caso só podemos usar ela via navegador. Em paralelo, o módulo alert é uma função blocking, neste caso somente após ser dado o ok nesser alerta que o próximo comando será realizado.</p>
+
+<h2>Variáveis com LET</h2>
+<p>Em JavaScript utilizamos variaveis para armazenarmos informações na memória da máquina, pra tanto podemos usar duas maneiras de declarar variaveis, uma é 'let' e outra 'var'.
+<p>Podemos tanto declarar uma variável sem passar nenhum valor desse modo a variável recebe como valor 'undefined'. Assim como também podemos declarar uma variável passando algum valor para ela, porém caso precisemos podemos alterar o valor passado declarado na variável em dievrsos momentos após a declaração da variável, porém não podemos declarar uma variável duas vezes no mesmo escopo (nesse caso nos referimos à declaração de variável sem valor).</p>
+<p>Todas as variáveis precisam ter nomes significativos assim como não podem ser nomeadas utilizando alguma das palavras reservadas da linguagem. Também não podemos usar números para começar uma variável, assim como não podem conter espaços ou traços(hífen). Para tanto, caso precisemos declarar nomes compostos é recomendado utilizar o padrão de camelCase, começando a variável com letra minúscula e as demais palavras começando com letras maiúsculas.</p>
+<p>Importante salientar que a linguagem é case-sensitive, ou seja, irá considerar letras maiúsculas e minúsculas em sua sintaxe.</p>
+<h3>Constantes com VAR</h3>
+<p>Também podemos declarar variáveis com 'var' porém essa notação não é muito recomendada pois essa declaração não é mais utilizada.</p>
+</p>
+<h2>Declaranndo constantes com CONST</h2>
+<p>
+<p>Segue as mesmas regras básicas das declarações com 'let', porém para ela temos uma característica a mais que consite em ela não poder ser declarada sem ser incializada, ou seja, deve-se sempre atribuir um valor para essa constante.</p>
+<p>Assim como o nome diz, uma constante não pode ser alterada no decorrer da exeucução do código. Nesse caso sendo fundamentais para evitar que esse valor seja alterado e, desta maneira, imapctar em bugs ou quebras no comportamento do código criado.</p>
+</p>
+<h2>Função typeof</h2>
+<p>Quando utilizada essa função podemos retornar o tipo de uma variável em tela, dessa maneira podemos controlar o tipo de uma variável para podermos evitar eventuais problemas no código.
+<p>Uma curiosidade importante, se contenarmos uma string com um numero a saída sempre será uma string.</p>
+</p>
+<h2>Concatenação de strings</h2>
+<p>Para concatenarmos uma string podemos usar a vírgula',' ou o mais '+'. No uso da virgula o js irá inserir um espaço ao final de cada valor para separar essas variaveis inseridas e não irá alterar o tipo da variável inserida caso seja número, no caso do mais não será acrescido nenhum valor e esta instrução funciona como união, nesse caso transformando em string os números inseridos.
+<p>O comando \n é utilizado caso quisermos pular uma linha em nosso texto, dessa maneira evitando um bloco de vários console.log() na impressão.</p>
+<h3>Template Strings</h3>
+<p>Outra maneira de ser concatenada uma strin a partir de variáveis é com o uso de template strings. Nessa maneira usamos a crase '`' para abrir e fechar a string que iremos montar e, então, usamos o conjunto cifrão+chaves ${} para apontar a variável que sera inserida nesta posição. Dessa maneira conseguimos criar uma frase dinâmica a parti de um conjunto de váriaveis predecessoras.</p>
+</p>
+<h2>Diferenças entre VAR e LET</h2>
+<p>Há uma gama de diferenças entre var e let, iremos listar algumas:
+    <li>Redeclaração de variáveis:
+        <ul>Utilizando o var para declarar uma variável é possivel ser redeclarada a variáevel. Algo que não é possivel utilizando-se o let.</ul>        
+    </li>
+</p>
