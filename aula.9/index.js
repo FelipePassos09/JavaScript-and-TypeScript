@@ -2,7 +2,7 @@ var nome1 = 'felipe'; // Cria uma variável e permite que a mesma seja declarada
 var nome1 = 'Felipe'; // Redeclara a variável referida.
 let sobrenome; // Cria uma variável única e impede que essa variável seja redeclarada no decorrer do do mesmo escopo.
 sobrenome = 'Passos'; // Atribui valor à variável criada em let.
-nomesobrenome = 'Felipe Passos'; // Não recomendado por criar uma váriavel global não declarada.
+let nomesobrenome = 'Felipe Passos'; // Não recomendado por criar uma váriavel global não declarada.
 
 function NomeSobrenome(nome, sobrenome) {
     console.log(nome, sobrenome);   
@@ -11,3 +11,5 @@ function NomeSobrenome(nome, sobrenome) {
 NomeSobrenome('Felipe', 'Passos');
 
 console.log(nomesobrenome);
+
+let nome = undefined;

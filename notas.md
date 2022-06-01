@@ -71,6 +71,30 @@ Diferente de outras linguagens, o javascript permite o uso de aspas simples, dup
 <h2>Diferenças entre VAR e LET</h2>
 <p>Há uma gama de diferenças entre var e let, iremos listar algumas:
     <li>Redeclaração de variáveis:
-        <ul>Utilizando o var para declarar uma variável é possivel ser redeclarada a variáevel. Algo que não é possivel utilizando-se o let.</ul>        
+        <ul>Utilizando o var para declarar uma variável é possivel ser redeclarada a variável. Algo que não é possivel utilizando-se o let.</ul>        
+    </li>
+    <li>Modernização do código
+        <ul>Com a chegada do ECMA SCRIPT 6 a instrução VAR foi mantida, porém uma nova instrução foi implementada em seu lugar, no caso a instrução LET, muito mais segura e com maiores funções de controle de variáveis como a sua declaração que não obriga a atribuição de um valor, sua segurança por impedir que uma variável possa ser declarada mais de uma vez, e sua maleabilidade em poder ser aplicada em situações e escopos distintos.</ul>
+    </li>
+</p>
+<h1>Tipos Primitivos</h1>
+<p>No JavaScript temos os seguintes tipos de dados primitivos:
+    <li>String
+        <ul>Consiste de qualquer conjunto de caracteres (numéricos, letra ou especiais) que sejam tratados como texto. Sua declaração deve ser acompanhada dos delimitadores aspas (tanto simples quanto duplas) e crase</ul>
+    </li>
+    <li>Number
+        <ul>Em JavaScript não temos distinção entre integer (inteiros ou int) e double (decimais ou float). Neste caso qualquer número que seja inserido sem nenhum delimitador de string será tratado como number e seu tipo identificado a partir da formatação uma vez que o JS é uma linguagem de tipagem dinâmica.</ul>
+    </li>
+    <li>Boolean
+        <ul>São os valores booleanos ou lógicos, estes são apenas <a style="color:purple; font-weight: bold">true</a> ou <a style="color:purple; font-weight: bold">false</a> e não podem possuir delimitadores pois são tratados como palavras reservadas da linguagem.</ul>
+    </li>
+    <li>Undefined
+        <ul>Um tipo de dado único que representa um valor indefinido, ou seja, um valor que ainda não foi indicado, seja para variável ou objeto. Neste caso ela não aponta para nenhul local na memória.</ul>
+    </li>
+    <li>Null
+        <ul>É dito de um valor vazio, é útil e usual quando se há necessidade de iniciar uma variável ou indicar um retorno onde não há valor de modo a evitar erros provenientes do uso de Undefined. Tal qual as variáveis booleanas, o valor null é uma palavra reservada da linguagem.</ul>
+    </li>
+    <li>Symbol
+        <ul></ul>
     </li>
 </p>
