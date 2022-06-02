@@ -98,3 +98,45 @@ Diferente de outras linguagens, o javascript permite o uso de aspas simples, dup
         <ul></ul>
     </li>
 </p>
+<h2>Operadores Aritiméticos, de Atribuição e Incremento</h2>
+<p>
+    <h3>Operadores aritiméticos</h3>
+        <li>+
+            <ul>Adição ou concatenação. Caso ambos os valores sejam number ele realiza a operação de soma, caso, ao menos, um dos dados seja string ele realiza a concatenação dos valores unindo-os em uma string.</ul>
+        </li>
+        <li>-, / , *
+            <ul>Estes realizam as demais operações básicas, respectivamente subtração, divisão e multiplicação.</ul>
+        </li>
+        <li>**
+            <ul>Este realiza a potenciação do numero referencia, ou seja eleva o primeiro número à x potencia, sendo esta o número seguinte ao **.</ul>
+        </li>
+        <li>%
+            <ul>Retorna o resto da divisão, ou seja, caso a divisão não seja um inteiro ele retorna o resto dessa operação.</ul>
+        </li>
+    <h3>Operadores de Atribuição</h3>
+        <li>=
+            <ul>O sinal de igual é utilizado, quando de forma individual após uma variável, define a atribuição de valor à essa variável ou objeto.</ul>
+        </li>
+    <h3>Operadores de Incremento/Decremento</h3>
+    <li>++
+        <ul>Realiza o incremento/decremento do valor na variável, porém somente é aplicavel em variáveis, constantes não podem ser incrementadas. Pode ser utilizado tanto após quanto antes do nome da variável a ser incrementada. Pode ser precedendo ou seguindo à variável onde, o posicionamento define a ordem na qual o incremento será realizado:
+            <li>Antecedendo a Variável: irá realizar a operação antes da chamada da variável, sendo neste caso a próxima ocorrência da variável o valor já operado.</li>
+            <li>Seguindo à variável: irá operar a variável, porém somente na próxima ocorrencia dela o valor alterado será apresentado.</li>
+        </ul>
+    </li>
+    <li>+=, *=, -=, /=, **=, etc..
+        <ul>Este incremento também pode ser lido como uma atribuição pois define uma atualização do valor à esquerda do operador, em função da operação indicada, com o valor à direita. Ou seja, ele incrementa o valor em função de outro valor.</ul>
+    </li>
+    <h3>Erros Nan</h3>
+    <p>O erro NaN (Not a Number) diz de uma operação aritmética que envolva um número e uma string. Por padrão ele sempre tentará realizar a operação desejada traduzindo ou convertendo o valor da string em number, porém somente se o valor em questão seja, estruturalmente um número (não contenha caracteres não númericos).</p>
+</p>
+<h2>Convertendo String em Number</h2>
+    <li>parseInt
+        <ul>Como o nome sugere, transforma uma string em um inteiro, desconsiderando as casas decimais</ul>
+    </li>
+    <li>parseFloat
+        <ul>Análogo à anterior, porém converte em double ou float, ou seja, considera as casas decimais.</ul>
+    </li>
+    <li>Number
+        <ul>Este converte em número e identifica qual o tipo do valor contido na string.</ul>
+    </li>
