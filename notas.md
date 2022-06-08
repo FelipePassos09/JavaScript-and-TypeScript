@@ -140,3 +140,42 @@ Diferente de outras linguagens, o javascript permite o uso de aspas simples, dup
     <li>Number
         <ul>Este converte em número e identifica qual o tipo do valor contido na string.</ul>
     </li>
+<h2>Escape</h2>
+<p>No javascipt usamos a barra invertida (\) como caractere para definir o escape, ou seja, mostrar ou alterar o comportamento de um caractere:
+    <table>
+        <tr>
+            <td>\\</td>
+            <td>Permite retornar a barra-invertida.</td>
+        </tr>
+        <tr>
+            <td>\" , \', \`</td>
+            <td>Permite retornar aspas (simples ou duplas) ou crase, mesmo se os delimitadores da string não forem compativeis.</td>
+        </tr>
+    </table>
+</p>
+<h2>Manipulando / Tratando strings</h2>
+<p>Temos um conjunto de métodos que podem ser empregados para tratar, editar, analisar ou manipular strings:
+    <h3>Fatiamento</h3>
+    <p>.slice() retorna um uma nova string conforme os parametros informados, ou seja, a partir do índice de lista que for passado na função.<br />Ex. umaString.slice(5) -> retornará o conteúdo da string a partir da 5 posição.</p>
+    <h3>Divisão (por caractere)</h3>
+    <p>.split() retornar um array contendo as partes da string recortadas conforme o parâmetro informado, neste caso o parâmetro deve ser um caractere contido na string. <br />Ex. Ex. umaString.slice('r') -> retornará um array com strings de acordo com os 'r' dentro da string.<br />Essa função também aceita como parâmetro adicional onde é possivel estabelecer quantos itens serão retornados dentro do array, desprezando os demais.</p>
+    <h3>Índice</h3>
+    <p>.indexOf() retorna qual a posição do caractere inserido como parâmetro da função, podem ser inseridos, também, conjuntos de caracteres, neste caso retornando a posição inicial do conjunto.</p>
+    <h3>Substituição</h3>
+    <p>.replace() retorna uma nova string contendo o valor alterado conforme os parâmetros passados na função.<br />Ex. umaString.replace('r', '#') -> Retornara uma string nova com todos os 'r' substituídos por '#'.</p>
+</p>
+<h2>Manipulando Números</h2>
+<p>
+    <li>.toFixed()
+        <ul>Este método formata as casas decimais de um número.</ul>
+    </li>
+    <li>.toString()
+        <ul>Converte o valor numérico para string.</ul>
+    </li>
+    <li>Number.isInteger()
+        <li>Retorna um boolean com a validação se o valor é ou não um inteiro.</li>
+    </li>
+    <li>Number.isNaN()
+        <ul>Retorna um boolean conforme o valor passado na função for ou não invalido.</ul>
+    </li>
+</p>
