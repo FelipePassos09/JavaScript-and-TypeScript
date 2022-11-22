@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .body{
     align-items: center;
     text-align: center;
@@ -11,4 +12,19 @@ div.body{
     margin-left: 25px;
     margin-right: 50%;
     background-color: rgb(45, 3, 83);
+=======
+.body{
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 50%;
+    background-color: rgb(146, 112, 177);
+}
+div.body{
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 50%;
+    background-color: rgb(45, 3, 83);
+>>>>>>> e9fa47fa72f1f75973af442841fcb582e470198c
 }
